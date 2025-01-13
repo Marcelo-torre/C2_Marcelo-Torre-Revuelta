@@ -1,0 +1,7 @@
+.Bibliografia{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    width: 80%;
+}
