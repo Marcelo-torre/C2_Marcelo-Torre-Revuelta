@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traspasos Recientes</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="traspasos.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Football News</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">News</a></li>
+                <li><a href="champions.html">Champions League</a></li>
+                <li><a href="traspasos.html">Trades</a></li>
+                <li><a href="rumores.html">Rumors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="date-display"></div>
+
+    <main>
+        <section>
+            <h2>Recent trades</h2>
+            <article>
+                <img src="https://cdn2.mediotiempo.com/uploads/media/2025/01/26/romulo-zwarg-en-un-juego.jpg" alt="Rômulo Zwarg">
+                <h3>Rômulo Zwarg to Tigres- Here We Go</h3>
+                <p>The Brazilian midfielder joins to Tigres for the Clausura 2025.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>This website was created by Hector Miguel Sanchez Luna and Marcelo Torre Revuelta</p>
+    </footer>
+
+    <script>
+        let d = new Date();
+        document.getElementById("date-display").innerHTML = "<h3>Today's date is " + d + "</h3>";
+    </script>
+</body>
+</html>

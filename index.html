@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Latest football news, match results, transfers and rumors from top European leagues">
+    <meta name="keywords" content="football, soccer, news, LaLiga, Premier League, transfers, Champions League">
+    <title>Football News</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="noticias.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Football News</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">News</a></li>
+                <li><a href="champions.html">Champions League</a></li>
+                <li><a href="traspasos.html">Trades</a></li>
+                <li><a href="rumores.html">Rumors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="date-display"></div>
+
+    <main>
+        <section class="site-description">
+            <h2>About This Website</h2>
+            <p>Welcome to Football News! This is a website about football. Here you can read the latest news about matches, players, and teams. We post updates about LaLiga, Premier League, and Champions League. You can also find information about trades and rumors. Click on the pictures to see different images. We hope you enjoy our website</p>
+        </section>
+
+        <section>
+            <h2>Last News</h2>
+            <article>
+                <img src="image1.png" id="barca" alt="Barca" onclick="changeTeamImage('barca')">
+                <h3>LaLiga</h3>
+                <p>FC Barcelona wins 7-1 against Valencia.</p>
+            </article>
+            <article>
+                <img src="image2.png" id="city" alt="City" onclick="changeTeamImage('city')">
+                <h3>Premier League</h3>
+                <p>Manchester City wins 3-1 against Chelsea.</p>
+            </article>
+        </section>
+
+        <section class="image-switcher">
+            <h2>Player of the Week</h2>
+            <div class="switcher-container">
+                <img src="image1.png" id="myImage" width="300px" onclick="newImage()" alt="Football player">
+                <p>Click the picture to see another player</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>This website was created by Hector Miguel Sanchez Luna and Marcelo Torre Revuelta</p>
+    </footer>
+
+    <script>
+        let d = new Date();
+        document.getElementById("date-display").innerHTML = "<h3>Today's date is " + d + "</h3>";
+    </script>
+</body>
+</html>

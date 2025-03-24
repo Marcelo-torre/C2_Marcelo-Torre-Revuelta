@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Champions League</title>
+    <link rel="stylesheet" href="general.css">
+    <link rel="stylesheet" href="champions.css">
+    <script src="java.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Football News</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">News</a></li>
+                <li><a href="champions.html">Champions League</a></li>
+                <li><a href="traspasos.html">Trades</a></li>
+                <li><a href="rumores.html">Rumors</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="date-display"></div>
+
+    <main>
+        <section>
+            <h2>Champions League</h2>
+            <article>
+                <img src="https://kchcomunicacion.com/wp-content/uploads/2025/01/41b3f564-c7fe-44c4-9665-b1c292c8fd7b.jpeg" alt="Barca">
+                <h3>Historic game</h3>
+                <p>Barcelona wins against benfica after a last minute goal.</p>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>This website was created by Hector Miguel Sanchez Luna and Marcelo Torre Revuelta</p>
+    </footer>
+
+    <script>
+        let d = new Date();
+        document.getElementById("date-display").innerHTML = "<h3>Today's date is " + d + "</h3>";
+    </script>
+</body>
+</html>
